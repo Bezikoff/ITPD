@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рамки и рамки</title>
+    <style>
+        body > p {
+            width: 20em;
+            margin: 3em 2em;
+            padding: 2em;
+            border: 3px solid red;
+        }
+        body > p:first-child {
+            border-radius: 15%;
+            box-shadow: -3px -3px 5px blue;
+        }
+        body > p:first-child(2) {
+            border-radius: 5% 10% 15% 20%;
+            box-shadow: 0 0 15px rgba(0, 0, 255, .6);
+        }
+        body > p:last-child {
+            border-width: 10px;
+            border-image: url(https://e7.pngegg.com/pngimages/119/492/png-clipart-frames-graphy-decorative-arts-gold-frame-furniture-rectangle.png) 10 stretch;
+            box-shadow: inset 3px 3px 5px rgba(0, 0, 0, .55);
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod ab optio dolorum laboriosam maiores minus totam velit odio voluptatibus id! Cumque, sunt enim nemo consequuntur voluptatibus ut illum illo perferendis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro repellat dignissimos commodi suscipit obcaecati rerum! Voluptatibus error corrupti iure debitis architecto incidunt magnam. Error maxime repellendus, laboriosam fuga mollitia sint.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit impedit culpa saepe delectus atque unde dolores quis tempore, nulla facere inventore eligendi illo eum assumenda aut ea quo accusamus voluptatibus.</p>
+</body>
+</html>
